@@ -1,0 +1,21 @@
+{
+  "memory": {
+    "name": "memory",
+    "connector": "memory"
+  },
+  "db": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "billingcycle",
+    "password": "",
+    "name": "db",
+    "user": "",
+    "connector": "mongodb"
+  },
+  "filestore-mongo": {
+    "name": "filestore-mongo",
+    "connector": "loopback-component-storage-mongo",    
+    "nameConflict": "makeUnique"
+  }
+}

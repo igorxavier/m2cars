@@ -1,0 +1,23 @@
+{
+  "name": "option",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "uuid"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,79 @@
+{
+  "name": "vehicle",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "year": {
+      "type": "number",
+      "required": true
+    },
+    "make": {
+      "type": "string",
+      "required": true
+    },
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "trim": {
+      "type": "string"
+    },
+    "mileage": {
+      "type": "string",
+      "required": true
+    },
+    "trans": {
+      "type": "string"
+    },
+    "vin": {
+      "type": "string",
+      "required": true
+    },
+    "stock": {
+      "type": "string",
+      "required": true
+    },
+    "engine": {
+      "type": "string"
+    },
+    "interior": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "drive_train": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "stars": {
+      "type": "number"
+    },
+    "price": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "options": {
+      "type": "embedsMany",
+      "model": "option",
+      "foreignKey": "",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
