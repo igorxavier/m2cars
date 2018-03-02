@@ -55,6 +55,12 @@
           "/site"
         ],
         "params": "$!../client/site"
+      },
+      {
+        "paths": [
+          "*" 
+        ],
+        "params": "$!../client/site/index.html"
       }
     ]
   },
